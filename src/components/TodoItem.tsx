@@ -10,9 +10,9 @@ export default function TodoItem(props: Props) {
         props.onClickDelete(props.id);
     }
     return (
-        <div>
-            {props.id} : {props.content}
-            <button onClick={onClickButton}>삭제</button>
+        <div className="flex items-center justify-between py-2">
+            <div className="w-[300px]">{props.content}</div>
+            <button className="p-2 rounded-md bg-gray-200 text-sm" onClick={onClickButton}>삭제</button>
         </div>
     )
 }

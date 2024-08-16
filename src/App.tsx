@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div>
-      <h1 className='font-semibold'>Todo</h1>
+      <h1 className='font-semibold m-4 text-4xl'>TODOLIST</h1>
       <Editor onClickAdd={onClickAdd} />
       <div>
         {todos.map((todo) => (
